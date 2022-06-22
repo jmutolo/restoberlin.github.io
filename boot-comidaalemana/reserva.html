@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Restaurant Berlin - Reserva</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rosarivo&display=swap" rel="stylesheet"> 
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                <span class="site-heading-upper text-white mb-3">Restaurant Berlin</span>
+                <span class="site-heading-lower">Comida Alemana</span>
+            </h1>
+        </header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Restaurant Berlin</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="sucursales.html">Sucursales</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="reserva.html">Reserva</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-5">
+                                <span class="section-heading-upper">Restaurant Berlin</span>
+                                <span class="section-heading-lower">Hace Tu Reserva</span>
+                            </h2>
+                            <form action="#" method="post">
+                              <div class="elem-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="visitor_name" placeholder="Nombre y Apellido" pattern=[A-Z\sa-z]{3,20} required>
+                              </div>
+                              <div class="elem-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="visitor_email" placeholder="ejemplo@email.com" required>
+                              </div>
+                              <div class="elem-group">
+                                <label for="phone">Celular</label>
+                                <input type="tel" id="phone" name="visitor_phone" placeholder="11-52454872" pattern=(\d{2})-?\s?(\d{8})-? required>
+                              </div>
+                              <hr>
+                              <div class="elem-group ">
+                                <label for="adult">Cantidad</label>
+                                <input type="number" id="adult" name="total_adults" placeholder="2" min="1" max="6" required>
+                              </div>
+                              <div class="elem-group ">
+                                <label for="fecha-reserva">Eliga la Fecha</label>
+                                <input type="date" id="fecha-reserva" name="reserva" required>
+                              </div>
+                              <div class="elem-group">
+                                <label for="horarios">Horarios</label>
+                                <select name="horarios" id="horarios">
+                                  <option>11:00</option>
+                                  <option>11:30</option>
+                                  <option>12:00</option>
+                                  <option>12:30</option>
+                                  <option>13:00</option>
+                                  <option>13:30</option>
+                                  <option>14:00</option>
+                                  <option>14:30</option>
+                                  <option>15:00</option>
+                                  <option>15:30</option>
+                                  <option>18:00</option>
+                                  <option>18:30</option>
+                                  <option>19:00</option>
+                                  <option>19:30</option>
+                                  <option>20:00</option>
+                                  <option>21:30</option>
+                                  <option>22:00</option>
+                                  <option>22:30</option>
+                                </select>
+                              </div>
+                              <hr>
+                              <div class="elem-group">
+                                <label for="room-selection">Eliga la Sucursal</label>
+                                
+                                <select id="room-selection" name="room_preference" required>
+                                  
+                                    <option value="Sucursal Charcas 4500">Charcas 4500</option>
+                                    <option value="Sucursal Fitz Roy 2199">Fitz Roy 2199</option>
+                                    <option value="Sucursal Av. Coronel Niceto Vega 5510">Av. Cnel Niceto Vega 5510</option>
+                                    <option value="Sucursal Cavia 2985">Cavia 2985</option>
+                                </select>
+                              </div>
+                              <hr>
+                              <div class="elem-group">
+                                <label for="message">Consideraciones</label>
+                                <br>
+                                <textarea id="message" name="visitor_message" placeholder="Mensaje" required></textarea>
+                              </div>
+                              <button class="btn btn-primary btn-xl" type="submit">Enviar Reserva</button>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer text-faded text-center py-5">
+            <div class="container"><p class="m-0 small">&copy; Restaurant Berlin 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script>
+          var fechaActual = new Date();
+          var año = fechaActual.getFullYear();
+          var mes = (fechaActual.getMonth() + 1);
+          var dia = (fechaActual.getDate() + 1);
+
+          if(dia < 10) {
+            dia = '0' + dia;
+          }
+          if(mes < 10) {
+            mes = '0' + mes;
+          }
+
+          var fechaMañana = año + "-" + mes + "-" + dia;
+          var elemFecha = document.querySelector("#fecha-reserva");
+          
+          elemFecha.setAttribute("min", fechaMañana);
+
+          
+        </script>
+    </body>
+</html>
